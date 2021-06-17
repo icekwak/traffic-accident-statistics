@@ -1,0 +1,108 @@
+@charset "UTF-8";
+*{ margin : 0px; padding : 0px; }
+		body{ 
+			background-color: rgba(246, 246, 246, 0.5);
+			color: rgb(70, 77, 82);
+			display: flex;
+			justify-content: center;
+		}
+		li{ list-style-type : none; }
+		a{ text-decoration : none; color: rgb(70, 77, 82); }
+		.wrap{
+			width: 90vw;
+			background-color: #fff;
+			height: 1000px;
+			box-shadow: 0 2px 4px 0 rgb(0 0 0 / 12%);
+			border: 0.5px solid rgb(0 0 0 / 12%);
+		}
+/*----------------------------*/
+.header{
+	width: 100%;
+	height: 100px;
+}
+
+.header #icon{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+	
+}
+.header #icon a span{ border-bottom: 1px solid rgba(70, 77, 82, 0.082); }
+
+.header .menu{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid rgba(70, 77, 82, 0.082);
+}
+.header .menu li{
+	width: 14vw;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 15px;
+	font-size: 18px;
+}
+.header .menu li a img{
+	width:20px;
+	height:20px;
+	padding-right: 10px;
+}
+
+
+
+
+
+/*---------------*/
+.main{
+	width: 100%;
+	height: 650px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 1px solid rgba(70, 77, 82, 0.082);
+}
+.main .contents{
+	width: 100%;
+	height: 610px;
+	position: relative;
+	overflow: hidden;
+}
+
+.main .contents .graph-box{
+	position: absolute;
+	left: 60px;
+	transition: left 0.5s ease-out;
+}
+
+#graph-year{ width: 1580px; }
+
+#graph-accident{ width: 1350px; }
+
+#graph-road{ width: 2400px; }
+
+#graph-region{ width: 2750px; }
+
+.main .contents .graph-box li{
+	width: 300px;
+	height: 300px;
+	float: left;
+	background-color: red;
+}
+.main .contents .graph-box li:not(:first-child){	margin-left: 20px; }
+.main .contents .controls span{
+	position: absolute;
+	top: 40%;
+	font-size: 70px;
+	color: #000;
+	text-shadow: 2px 2px 2px lightgray;
+}
+.main .contents .controls span:hover{	cursor: pointer; }
+.main .contents .controls span.prev{ left: 5px; }
+.main .contents .controls span.next{ right: 5px; }

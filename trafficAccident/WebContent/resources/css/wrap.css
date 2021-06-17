@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+*{ margin : 0px; padding : 0px; }
+body{ 
+	display: flex;
+	justify-content: center;
+	background-color: rgba(246, 246, 246, 0.5);
+	color: rgb(70, 77, 82);
+}
+li{ list-style-type : none; }
+a{ text-decoration : none; color: rgb(70, 77, 82); }
+
+.wrap{
+	width: 84.5vw;
+	background-color: #fff;
+	height: 900px;
+	box-shadow: 0 2px 4px 0 rgb(0 0 0 / 12%);
+	border: 0.5px solid rgb(0 0 0 / 12%);
+}

@@ -1,0 +1,82 @@
+.main{
+	width: 100%;
+	height: 650px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 1px solid rgba(70, 77, 82, 0.082);
+}
+.main .contents{
+	width: 100%;
+	height: 610px;
+	position: relative;
+	overflow: hidden;
+}
+
+.main .contents .graph-box{
+	position: absolute;
+	transition: left 0.5s ease-out;
+}
+
+#graph-year{ width: 1580px; }
+
+#graph-accident{ width: 1260px; }
+
+#graph-road{ width: 2220px; }
+
+#graph-region{ width: 1900px; }
+
+.main .contents .graph-box li{
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+.main .contents .graph-box li:not(:first-child){	margin-left: 20px; }
+.main .contents .controls span{
+	position: absolute;
+	top: 45%;
+	font-size: 50px;
+	color: #000;
+	text-shadow: 2px 2px 2px lightgray;
+}
+.main .contents .controls span:hover{	cursor: pointer; }
+.main .contents .controls span.prev{ left: 5px; }
+.main .contents .controls span.next{ right: 5px; }
+
+.main .contents .ranking{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 270px;
+}
+.main .contents .ranking p{
+	height: 30px;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+}
+.main .contents .ranking .ranking-box{
+	width: 100%;
+	height: 240px;
+}
+.main .contents .ranking .ranking-box p{
+	background-color: rgba(246, 246, 246, 0.5);
+	border-bottom: 1px solid rgba(70, 77, 82, 0.082);
+}
+.main .contents .ranking .ranking-box>li{
+	float: left;
+	width: 300px;
+	height: 240px;
+	margin-left: 20px;
+}
+.main .contents .ranking .ranking-box .ranking-contents{
+	margin-top: 5px;
+	width: 100%;
+}
+.main .contents .ranking .ranking-box .ranking-contents li{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid rgba(70, 77, 82, 0.082);
+}
